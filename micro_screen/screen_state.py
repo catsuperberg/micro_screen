@@ -63,9 +63,9 @@ class ScreenState():
     input_string: str = ''
     
     def __init__(self, lines: list[Line]):    
-        row = 0
+        row = 1
         for displaybles in lines:
-            column = 0
+            column = 1
             static_line_elements = []
             for displayable in displaybles:
                 if isinstance(displayable, str):

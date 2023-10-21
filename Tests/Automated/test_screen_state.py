@@ -41,15 +41,15 @@ class TestScreenState(unittest.TestCase):
         ''
     ]    
     expected_dynamic_fields = [
-        DynamicField([0, 11], 1, consumables[0]),
-        DynamicField([1, 17], 2, consumables[1]),
-        DynamicField([1, 20], 3, consumables[2])
+        DynamicField([1, 12], 1, consumables[0]),
+        DynamicField([2, 18], 2, consumables[1]),
+        DynamicField([2, 21], 3, consumables[2])
     ]    
     expected_input_fields = [
-        InputField([0, 3], 5, callbacks[0]),
-        InputField([1, 5], 4, callbacks[1]),
-        InputField([1, 10], 3, callbacks[2]),
-        InputField([2, 0], 2, callbacks[3])
+        InputField([1, 4], 5, callbacks[0]),
+        InputField([2, 6], 4, callbacks[1]),
+        InputField([2, 11], 3, callbacks[2]),
+        InputField([3, 1], 2, callbacks[3])
     ]
     
     def test_init_from_lines(self):
